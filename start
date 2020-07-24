@@ -1,0 +1,26 @@
+// Show pop up message on the browser saying "Hey this is cool!"
+alert("Hey this is cool!")
+
+// Pop up message will automatically calculate and produce a result on the browser
+alert (5+8)
+
+// Set a variable using 'var'
+// Date()
+var date = new Date()
+alert ("Today is" + date)
+
+
+// Display the result on the console
+console.log ("Today is " + date)
+
+// Display on the browser
+document.body.innerHTML = "<h1>The date today is " + date + "</h1>"
+
+// Display in a different format
+document.body.innerHTML = "<h1>The date today is " + date.getMonth() + "/" + date.getDate() + "/" + date.getFullYear() + "</h1>"
+// result will show: "<h1>The date today is 6/24/2020</h1>"
+// 'getMonth()' will be counted starting from 0
+
+// In order to show the actual month, you can add +1 to the 'getMonth()' call 
+document.body.innerHTML = "<h1>The date today is " + (date.getMonth()+1) + "/" + date.getDate() + "/" + date.getFullYear() + "</h1>"
+// result will show: "<h1>The date today is 7/24/2020</h1>"
