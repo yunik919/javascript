@@ -1,0 +1,10 @@
+// JavaScript Render Blocking
+Anytime a browser encounters a JavaScript file reference, 
+it stops the rendering of the page until the script file is downloaded and executed.
+If the Script calls for a code that cannot be parsed at that time, the rendering stops.
+
+JavaScript loading methods:
+1 Load right away
+  HTML will parse
+2 Load asynchronously
+3 Deferred loading until everything else has loaded
