@@ -1,0 +1,57 @@
+// Add inline JavaScript to a HTML document
+
+// First Scenario - inserting between <body></body>
+// Open this file in a browser and it will display the results in the 'body' section
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>An empty page</title>
+
+
+</head>
+
+<body>
+
+    // Open <script> and close with </script> inside the <body></body>
+    <script>
+        var date = new Date();
+        document.body.innerHTML = "<h1> Today is: " + date + "</h1>";
+    </script>
+
+
+</body>
+
+</html>
+
+// Second Scenario - inserting between <head></head>
+// Open this file in a browser and it will NOT display the results in the 'head' section
+// Error message will show up
+// Reason: <script> says 'document.body.innerHTML'
+// JavaScript has yet to render <body> yet when it reaches the code 'document.body.innerHTML'
+// Tip: JavaScript renders in the order the codes are written
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>An empty page</title>
+    
+    // Open <script> and close with </script> inside the <head></head>
+    <script>
+        var date = new Date();
+        document.body.innerHTML = "<h1> Today is: " + date + "</h1>";
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
