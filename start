@@ -1,3 +1,6 @@
+// Title: Introducing the browser console
+// Type the following codes to the browser 'console'
+
 // Show pop up message on the browser saying "Hey this is cool!"
 alert("Hey this is cool!")
 
