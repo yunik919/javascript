@@ -1,4 +1,5 @@
-// Add inline JavaScript to a HTML document
+// Title: Add inline JavaScript to a HTML document
+// File extention: .html
 
 // First Scenario - inserting between <body></body>
 // Open this file in a browser and it will display the results in the 'body' section
